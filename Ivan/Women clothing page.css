@@ -14,6 +14,7 @@
     font-family: 'Georgia', serif;
     background-color: #F8F4EC;
     color: #2b2b2b;
+    font-size: 18px;
   }
   
   /* PAGE CONTAINER TO STICK FOOTER TO BOTTOM */
@@ -30,9 +31,9 @@
   /* HEADER */
   header {
     width: 90%;
-    max-width: 1500px;
+    max-width: 1550px;
     margin: 20px auto;
-    padding: 15px 30px;
+    padding: 25px 40px;
     background-color: #2E4A3D;
     color: #fff2d8;
     border-radius: 20px;
@@ -61,7 +62,7 @@
     text-decoration: none;
     color: #C9B37E;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
   
   /* SEARCH & ICONS */
@@ -83,7 +84,7 @@
     border: none;
     outline: none;
     padding: 5px;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     background-color: transparent;
     color: #C9B37E;
     flex-grow: 1;
@@ -101,7 +102,7 @@
     display: flex;
     gap: 15px;
     color: #C9B37E;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   
   /* PRODUCTS SECTION */
@@ -155,7 +156,7 @@
     padding: 15px;
     font-weight: bold;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-top: 2px solid #2f4f4f;
   }
   
@@ -169,14 +170,33 @@
   }
   
   footer p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     line-height: 1.5;
   }
   
   footer strong {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: bold;
   }
+
+  .social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+  }
+  
+  .social-icons a {
+    color: #f8f4ec; /* Matches your old money site theme */
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    gap: 20px;
+  }
+  
+  .social-icons a:hover {
+    color: #C9B37E; /* Soft green on hover */
+  }
+  
   
   /* RESPONSIVE */
   @media (max-width: 768px) {
