@@ -1,3 +1,4 @@
+
 /* Reset Styles */
 * {
     margin: 0;
@@ -11,7 +12,7 @@
   
   body {
     font-family: 'Georgia', serif;
-    background-color: #ffeecd;
+    background-color: #F8F4EC;
     color: #2b2b2b;
   }
   
@@ -32,7 +33,7 @@
     max-width: 1200px;
     margin: 20px auto;
     padding: 15px 30px;
-    background-color: #002147;
+    background-color: #2E4A3D;
     color: #fff2d8;
     border-radius: 20px;
     display: flex;
@@ -58,7 +59,7 @@
   
   nav ul li a {
     text-decoration: none;
-    color: #f8f4ec;
+    color: #C9B37E;
     font-weight: bold;
     font-size: 1rem;
   }
@@ -84,12 +85,12 @@
     padding: 5px;
     font-size: 0.9rem;
     background-color: transparent;
-    color: #f8f4ec;
+    color: #C9B37E;
     flex-grow: 1;
   }
   
   .search-container input::placeholder {
-    color: #f8f4ec;
+    color: #C9B37E;
   }
   
   .search-container i {
@@ -99,7 +100,7 @@
   .icons {
     display: flex;
     gap: 15px;
-    color: #C1A875;
+    color: #C9B37E;
     font-size: 1.1rem;
   }
   
@@ -149,7 +150,7 @@
   button {
     width: 100%;
     border: none;
-    background-color: #ffeecd;
+    background-color: #D6CFC4;
     color: #2B2B2B;
     padding: 15px;
     font-weight: bold;
@@ -163,8 +164,8 @@
     width: 100%;
     text-align: center;
     padding: 40px 20px;
-    background-color: #002147;
-    color: #f8f4ec;
+    background-color: #2E4A3D;
+    color: #C9B37E;
   }
   
   footer p {
