@@ -43,11 +43,8 @@ function moveSlide(carouselType, direction) {
     }
 
     // Save the updated slideIndex for each carousel
-    if (carouselType === 'new') 
-        newSlideIndex = slideIndex;
-    
-    if (carouselType === 'trending') 
-        trendingSlideIndex = slideIndex;
+    if (carouselType === 'new') newSlideIndex = slideIndex;
+    if (carouselType === 'trending') trendingSlideIndex = slideIndex;
 
     // Apply the transform to move the carousel smoothly
     carousel.style.transition = "transform 0.5s ease"; // Re-enable transition
