@@ -1,7 +1,8 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
 }
 
 header {
@@ -12,8 +13,8 @@ header {
     padding: 10px 20px;
     background-color: white;
     display: flex;
-    justify-content: flex-start; /* Align the content to the left */
-    align-items: center; /* Vertically center the logo and text */
+    justify-content: flex-start; 
+    align-items: center; 
     z-index: 10;
 }
 #scrollTopBtn {
@@ -40,8 +41,7 @@ header {
 
 .logo-nav-container {
     display: flex;
-    align-items: center; /* Vertically center the logo and nav items */
-    
+    align-items: center;    
 }
 
 .logo {
@@ -51,10 +51,10 @@ header {
 
 .nav {
     display: flex;
-    gap: 60px; /* Small gap between MEN and WOMAN text */
+    gap: 60px; 
     font-size: 30px;
-    align-items: center; /* Vertically center the MEN and WOMAN texts */
-    margin-left: 160px; /* Small gap between the logo and MEN/WOMAN */
+    align-items: center; 
+    margin-left: 160px; 
 }
 
 .nav-item {
@@ -72,7 +72,7 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-top: 70px; /* Added padding to avoid image overlapping header */
+    padding-top: 70px; 
     margin-top: 70px;
 }
 
@@ -86,7 +86,7 @@ header {
     background-image: url('https://via.placeholder.com/1920x800?text=Fashion+Image');
     background-size: cover;
     background-position: center center;
-    filter: blur(5px); /* Apply blur effect */
+    filter: blur(5px);
     z-index: 1;
 }
 
@@ -98,7 +98,7 @@ header {
     text-align: center;
     font-size: 50px;
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Added text shadow for readability */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
 }
 
 
@@ -128,9 +128,9 @@ header {
 }
 
 .carousel-image {
-    width: 300px;  /* Set fixed width for images */
+    width: 300px;  
     height: 400px;
-    flex-shrink: 0; /* Prevent images from shrinking */
+    flex-shrink: 0; 
     margin: 10px;
 }
 
@@ -154,7 +154,7 @@ header {
 .featured-section {
     text-align: center;
     padding: 60px 0;
-    background-color: #e6e6e6;  /* Light background color */
+    background-color: #e6e6e6; 
 }
 
 .featured-section h2 {
@@ -170,7 +170,7 @@ header {
 
 .carousel-item img {
     width: 100%;
-    height: 400px; /* Set fixed height for consistency */
+    height: 400px; 
     object-fit: cover;
     border-radius: 10px;
 }
@@ -180,7 +180,7 @@ header {
     bottom: 10%;
     left: 5%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 10px;
     border-radius: 5px;
     width: 90%;
@@ -222,5 +222,21 @@ header {
 .carousel-button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
+ footer {
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+    background-color:white;
+    color: black;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  footer strong {
+    font-size: 1rem;
+    font-weight: bold;
+  }
 
