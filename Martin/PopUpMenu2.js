@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const popupMenu = document.getElementById("popupMenuShoes");
+    const popupMenu = document.getElementById("popupMenu2");
     const openButton = document.getElementById("secondOpen");
     const closeButton = document.getElementById("secondCloseMenu");
 
     openButton.addEventListener("click", () => {
-        popupMenu.style.display = "block";
+        popupMenu.style.display = "flex";
     });
 
     closeButton.addEventListener("click", () => {
