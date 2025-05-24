@@ -13,7 +13,7 @@
     font-family: 'Georgia', serif;
     background-color: #F8F4EC;
     color: #2b2b2b;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
   }
   
   /* PAGE CONTAINER TO STICK FOOTER TO BOTTOM */
@@ -30,12 +30,12 @@
   /* HEADER */
   header {
     width: 90%;
-    max-width: 1550px;
-    margin: 20px auto;
-    padding: 25px 40px;
+    max-width: 96.875rem; /* 1550px */
+    margin: 1.25rem auto; /* 20px */
+    padding: 1.5625rem 2.5rem; /* 25px 40px */
     background-color: #2E4A3D;
     color: #fff2d8;
-    border-radius: 20px;
+    border-radius: 1.25rem; /* 20px */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -43,17 +43,17 @@
   }
   
   .logo img {
-    width: 70px;
-    height: 70px;
+    width: 4.375rem; /* 70px */
+    height: 4.375rem; /* 70px */
     object-fit: cover;
-    border: 2px solid #2f4f4f00;
-    border-radius: 8px;
+    border: 0.125rem solid #2f4f4f00; /* 2px */
+    border-radius: 0.5rem; /* 8px */
   }
   
   nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 1.25rem; /* 20px */
     flex-wrap: wrap;
   }
   
@@ -68,21 +68,21 @@
   .search-icons-container {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem; /* 20px */
   }
   
   .search-container {
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #f8f4ec;
-    padding: 5px;
-    max-width: 200px;
+    border-bottom: 0.125rem solid #f8f4ec; /* 2px */
+    padding: 0.3125rem; /* 5px */
+    max-width: 12.5rem; /* 200px */
   }
   
   .search-container input {
     border: none;
     outline: none;
-    padding: 5px;
+    padding: 0.3125rem; /* 5px */
     font-size: 1.2rem;
     background-color: transparent;
     color: #C9B37E;
@@ -94,12 +94,12 @@
   }
   
   .search-container i {
-    margin-right: 5px;
+    margin-right: 0.3125rem; /* 5px */
   }
   
   .icons {
     display: flex;
-    gap: 15px;
+    gap: 0.9375rem; /* 15px */
     color: #C9B37E;
     font-size: 1.3rem;
   }
@@ -109,8 +109,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
-    padding: 60px 40px;
+    gap: 2.5rem; /* 40px */
+    padding: 3.75rem 2.5rem; /* 60px 40px */
     background-color: #77a46d00;
     font-size: 1.6rem;
   
@@ -119,13 +119,13 @@
   }
   
   .product {
-    flex: 1 1 500px;        
-    max-width: 750px;
+    flex: 1 1 31.25rem; /* 500px */
+    max-width: 46.875rem; /* 750px */
     background-color: #ffffff;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.625rem; /* 10px */
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(44, 143, 19, 0.507);
+    box-shadow: 0 0.25rem 0.625rem rgba(44, 143, 19, 0.507); /* 0 4px 10px */
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease;
@@ -153,18 +153,18 @@
     border: none;
     background-color: #D6CFC4;
     color: #2B2B2B;
-    padding: 15px;
+    padding: 0.9375rem; /* 15px */
     font-weight: bold;
     cursor: pointer;
     font-size: 1.2rem;
-    border-top: 2px solid #2f4f4f;
+    border-top: 0.125rem solid #2f4f4f; /* 2px */
   }
   
   /* FOOTER */
   footer {
     width: 100%;
     text-align: center;
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem; /* 40px 20px */
     background-color: #2E4A3D;
     color: #C9B37E;
   }
@@ -179,17 +179,17 @@
     font-weight: bold;
   }
   .social-icons {
-    margin-top: 20px;
+    margin-top: 1.25rem; /* 20px */
     display: flex;
     justify-content: center;
-    gap: 400px;
+    gap: 25rem; /* 400px */
   }
   
   .social-icons a {
     color: #f8f4ec; /* Matches your old money site theme */
     font-size: 1.5rem;
     transition: color 0.3s ease;
-    gap: 20px;
+    gap: 1.25rem; /* 20px */
   }
   
   .social-icons a:hover {
@@ -197,11 +197,11 @@
   }
   
   /* RESPONSIVE */
-  @media (max-width: 768px) {
+  @media (max-width: 48rem) { /* 768px */
     header {
       flex-direction: column;
       align-items: flex-start;
-      gap: 10px;
+      gap: 0.625rem; /* 10px */
     }
   
     .search-container {
@@ -211,6 +211,6 @@
   
     .icons {
       align-self: flex-end;
-      margin-top: 10px;
+      margin-top: 0.625rem; /* 10px */
     }
   }
