@@ -16,7 +16,6 @@
     font-size: 1.125rem; /* 18px */
   }
   
-  /* PAGE CONTAINER TO STICK FOOTER TO BOTTOM */
   .page-container {
     display: flex;
     flex-direction: column;
@@ -27,7 +26,7 @@
     flex: 1;
   }
   
-  /* HEADER */
+  
   header {
     width: 90%;
     max-width: 96.875rem; /* 1550px */
@@ -64,7 +63,7 @@
     font-size: 1.6rem;
   }
   
-  /* SEARCH & ICONS */
+  
   .search-icons-container {
     display: flex;
     align-items: center;
@@ -104,7 +103,6 @@
     font-size: 1.3rem;
   }
   
-  /* PRODUCTS SECTION */
   .products {
     display: flex;
     flex-wrap: wrap;
@@ -113,8 +111,6 @@
     padding: 3.75rem 2.5rem; /* 60px 40px */
     background-color: #77a46d00;
     font-size: 1.6rem;
-  
-    /* NEW: Make full width */
     width: 100%;
   }
   
@@ -183,20 +179,20 @@
     display: flex;
     justify-content: center;
     gap: 25rem; /* 400px */
+    color: #2e281a; /* Matches your old money site theme */
   }
   
   .social-icons a {
-    color: #f8f4ec; /* Matches your old money site theme */
+    color: #312b20; /* Matches your old money site theme */
     font-size: 1.5rem;
     transition: color 0.3s ease;
     gap: 1.25rem; /* 20px */
   }
   
   .social-icons a:hover {
-    color: #C9B37E; /* Soft green on hover */
+    color: #C9B37E; 
   }
   
-  /* RESPONSIVE */
   @media (max-width: 48rem) { /* 768px */
     header {
       flex-direction: column;
