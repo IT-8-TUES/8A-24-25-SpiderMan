@@ -29,7 +29,7 @@ header {
     height: 85px;
 }
 
-/*.nav {
+.nav {
     display: flex;
     gap: 60px; 
     font-size: 30px;
@@ -39,8 +39,9 @@ header {
 
 .nav-item {
     cursor: pointer;
+    color: black;
 }
-*/ nav ul {
+ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
