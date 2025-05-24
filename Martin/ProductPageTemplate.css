@@ -15,7 +15,7 @@ header {
     max-width: 81.25rem;
     margin: 0 0 0 0;
     padding: 0.4375rem 2.5rem;
-    background-color: greenyellow;
+    background-color: #002147;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -31,7 +31,7 @@ header {
 }
 
 .navigator a {
-    color: black;
+    color: #C1A875;
     font-weight: bold;
     font-size: 1.25rem;
     text-decoration: none;
@@ -117,7 +117,7 @@ footer {
     font-size:1.2rem;
 }
   
- /* footer p {
+  footer p {
     font-size: 1.2rem;
     line-height: 1.5;
   }
@@ -125,4 +125,4 @@ footer {
   footer strong {
     font-size: 1.5rem;
     font-weight: bold;
-  }*/
+  }

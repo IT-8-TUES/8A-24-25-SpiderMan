@@ -29,10 +29,11 @@ header {
     height: 85px;
 }
 
-/*.nav {
+.nav {
     display: flex;
     gap: 60px; 
     font-size: 30px;
+    color: #2d3a4b;
     align-items: center; 
     margin-left: 160px; 
 }
