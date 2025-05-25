@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
   }
+  body {
+    font-family: 'Georgia', serif;
+    background-color: #ffeecd;
+    color: #2b2b2b;
+    font-size: 1.125rem; /* 18px */
+  }
   
 .page-container {
     display: flex;
@@ -11,20 +17,23 @@
   }
 
 header {
-    width: 100%;
-    max-width: 81.25rem;
-    margin: 15 0 0 15;
-    padding: 0.4375rem 2.5rem;
+    width: 90%;
+    max-width: 96.875rem; /* 1550px */
+    margin: 1.25rem auto; /* 20px */
+    padding: 1.5625rem 2.5rem; /* 25px 40px */
     background-color: #002147;
+    color: #fff2d8;
+    border-radius: 1.25rem; /* 20px */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-}
+    justify-content: space-evenly;
+  }
+
 
 .logo img{
-    width: 4.375rem;
-    height: 4.375rem;
+    width: 4.875rem;
+    height: 4.875rem;
     object-fit:contain;
     border: 0.125rem solid #2f4f4f00;
     border-radius: 0.5rem;
@@ -34,23 +43,24 @@ header {
     color: #C1A875;
     font-weight: bold;
     margin-left: 3rem;
-    font-size: 1.25rem;
+    font-size: 2rem;
     text-decoration: none;
 }
 
 .Clothing{
-    text-align: left;
+    text-align:center;
     padding: 1.25rem 1.875rem;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    font-size: 1.5625rem;
+    font-size: 2rem;
+    color: #002147;
 }
 
 .Products {
     display: flex;
     flex-wrap: nowrap;
-    justify-content:space-around;
-    gap: 3.75rem;
+    justify-content:center;
+    gap: 2.75rem;
     padding: 3.75rem 2.5rem;
     background-color: #77a46d00;
     font-size: 1.6rem;
@@ -59,8 +69,8 @@ header {
 }
 
 .Photos{
-    width: 25rem;
-    height: 18.75rem;
+    width: 35rem;
+    height: 28.75rem;
     object-fit:contain;
     display:block;
 }
@@ -114,7 +124,7 @@ footer {
     margin-top: 1.875rem;
     padding: 2.5rem 1.875rem;
     background-color: #002147;
-    color: b#C1A875;
+    color: #C1A875;
     font-size:1.2rem;
 }
   
@@ -126,4 +136,39 @@ footer {
   footer strong {
     font-size: 1.5rem;
     font-weight: bold;
+  }
+  .social-icons {
+    margin-top: 1.25rem; /* 20px */
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* 400px */
+  }
+  
+  .social-icons a {
+    color: #f8f4ec; 
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    gap: 1.25rem; /* 20px */
+  }
+  
+  .social-icons a:hover {
+    color: #C9B37E; 
+  }
+  
+  @media (max-width: 48rem) { /* 768px */
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.625rem; /* 10px */
+    }
+  
+    .search-container {
+      max-width: 100%;
+      width: 100%;
+    }
+  
+    .icons {
+      align-self: flex-end;
+      margin-top: 0.625rem; /* 10px */
+    }
   }

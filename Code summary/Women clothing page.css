@@ -179,11 +179,10 @@
     display: flex;
     justify-content: center;
     gap: 25rem; /* 400px */
-    color: #2e281a; /* Matches your old money site theme */
   }
   
   .social-icons a {
-    color: #312b20; /* Matches your old money site theme */
+    color: #f8f4ec; /* Matches your old money site theme */
     font-size: 1.5rem;
     transition: color 0.3s ease;
     gap: 1.25rem; /* 20px */
