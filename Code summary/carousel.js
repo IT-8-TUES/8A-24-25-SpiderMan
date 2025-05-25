@@ -20,35 +20,38 @@ function moveSlide(carouselType, direction) {
     const slideWidth = slides[0].clientWidth + 20;
 
     // Update the slideIndex based on the direction
-    if (direction === 1) {
-        slideIndex++;
-        if (slideIndex >= totalSlides) {
-            // If we've reached the last image, reset to the first image (without visible jump)
-            setTimeout(() => {
-                carousel.style.transition = "none"; // Disable transition temporarily
-                carousel.style.transform = `translateX(0)`; // Jump to the start
-                slideIndex = 1; // Skip the duplicated first image
-            }, 500); // Wait for the transition to complete
-        }
-    } else {
-        slideIndex--;
-        if (slideIndex < 0) {
-            // If we've reached the first image, reset to the last image (without visible jump)
-            setTimeout(() => {
-                carousel.style.transition = "none"; // Disable transition temporarily
-                carousel.style.transform = `translateX(-${(totalSlides - 1) * slideWidth}px)`; // Jump to the last image
-                slideIndex = totalSlides - 2; // Skip the duplicated last image
-            }, 500); // Wait for the transition to complete
-        }
-    }
-
-    // Save the updated slideIndex for each carousel
-    if (carouselType === 'new') newSlideIndex = slideIndex;
-    if (carouselType === 'trending') trendingSlideIndex = slideIndex;
+    slideIndex += direction;
 
     // Apply the transform to move the carousel smoothly
-    carousel.style.transition = "transform 0.5s ease"; // Re-enable transition
+    carousel.style.transition = "transform 0.5s ease"; // Enable transition
     carousel.style.transform = `translateX(-${slideIndex * slideWidth}px)`; // Move the carousel
+
+    // After transition ends, check if we need to reset position for infinite loop
+    carousel.addEventListener('transitionend', function handler() {
+        carousel.removeEventListener('transitionend', handler);
+
+        if (slideIndex >= totalSlides - 1) {
+            // Reached the cloned last slide, reset to first real slide
+            carousel.style.transition = "none"; // Disable transition
+            slideIndex = 1;
+            carousel.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+        } else if (slideIndex <= 0) {
+            // Reached the cloned first slide, reset to last real slide
+            carousel.style.transition = "none"; // Disable transition
+            slideIndex = totalSlides - 2;
+            carousel.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+        }
+
+        // Update the slideIndex variable after reset
+        if (carouselType === 'new') newSlideIndex = slideIndex;
+        if (carouselType === 'trending') trendingSlideIndex = slideIndex;
+    });
+
+    // Update the slideIndex variable immediately for normal moves
+    if (slideIndex > 0 && slideIndex < totalSlides - 1) {
+        if (carouselType === 'new') newSlideIndex = slideIndex;
+        if (carouselType === 'trending') trendingSlideIndex = slideIndex;
+    }
 }
 
 function setupCarousel(carouselId) {
@@ -67,7 +70,9 @@ function setupCarousel(carouselId) {
     });
 
     // Set the initial position of the carousel (showing the first image, not the clone)
-    carousel.style.transform = `translateX(-${slides[0].clientWidth + 20}px)`; // Slide past the first image
+    const slideWidth = slides[0].clientWidth + 20;
+    carousel.style.transition = "none";
+    carousel.style.transform = `translateX(-${slideWidth}px)`; // Slide past the first image
 }
 
 // Call the setupCarousel function after the DOM is ready
