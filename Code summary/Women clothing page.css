@@ -156,7 +156,7 @@
     border-top: 0.125rem solid #2f4f4f; /* 2px */
   }
   
-  /* FOOTER */
+  
   footer {
     width: 100%;
     text-align: center;
@@ -182,7 +182,7 @@
   }
   
   .social-icons a {
-    color: #f8f4ec; /* Matches your old money site theme */
+    color: #f8f4ec; 
     font-size: 1.5rem;
     transition: color 0.3s ease;
     gap: 1.25rem; /* 20px */
